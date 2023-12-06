@@ -11,8 +11,9 @@ display: block;
 
 @media screen and (max-width: 600px) {
      h1 {font-size: 20px}
-     .calculadora, .info {padding: 80px;
-    }
+     .calculadora, .info {padding-left: 80px;padding-right: 80px;}
+     
+
     
 }
 
@@ -22,7 +23,7 @@ height: 30px;
 color: white;
 text-align: center;
 border-radius: 10px;
-border-color: black;}
+border: none;}
 
 ::placeholder {color: white;
 text-align: center;}
@@ -32,7 +33,9 @@ height: 40px;
 text-align: center;
 border-radius: 10px;
 background-color: #2c2842;
-color: white;}
+color: white;
+border:none;
+}
 
 
 .calculadora {

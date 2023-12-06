@@ -31,14 +31,14 @@ color: white;}
     width: 50%;
     height: 50%;
     background-color: #ed6452;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .info {display: inline-block;
 background-color: #c94738;
 height: 50%;
 width: 50%;
-border-radius: 10px;}
+border-radius: 0px 0px 10px 10px;}
 
 ul {display:inline-block;
 text-align: left;}

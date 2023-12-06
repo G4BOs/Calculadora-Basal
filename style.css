@@ -32,13 +32,15 @@ color: white;}
     height: 50%;
     background-color: #ed6452;
     border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 5px #2c2842;
 }
 
 .info {display: inline-block;
 background-color: #c94738;
 height: 50%;
 width: 50%;
-border-radius: 0px 0px 10px 10px;}
+border-radius: 0px 0px 10px 10px;
+box-shadow: 3px 3px 5px #2c2842;}
 
 ul {display:inline-block;
 text-align: left;}

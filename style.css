@@ -1,9 +1,10 @@
 body {background-color:#ffe8cd;
 text-align: center;
-color: white;}
+color: white;font-family: Arial, Helvetica, sans-serif;
+     }
 
 
-h1 {font-family: Arial, Helvetica, sans-serif;
+h1 {
 font-size: 40px; 
 color: white;
 display: block;

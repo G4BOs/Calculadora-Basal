@@ -2,31 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de hidratacion basal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no, maximun-scale=1.0, minimun-scale=1.0 ">
+    <title>Calculadora basal</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-        <body>
-                 <div class="calculadora">
-                 <h1>Calculadora basal</h1>
+<body>
+    <div  id="Contenedor">
 
-
-
-                 <input type="number" placeholder="Ingrese el peso en kg">
-                 <p>*Debe completar todos los datos</p>
-                 <button>Calcular</button>
-                 <p>71cc/h</p>
-                 <p>m+m/2 : 105cc/h</p>
-                 </div> 
-                  
-                  <div class="info">
-                 
-                     <h2>Como se calcula?</h2>
-                     <ul>
-                            <li>Cuando el niño tiene hasta 10kg: 100cc por cada kilo. </li>
-                            <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.</li>
-                            <li>Finalmente, por cada kilo arriba de 20kg se suman 20cc.</li>
-                    </ul>
+        <div class="ventana" id="Calculadora">
+            <h1>CALCULADORA BASAL</h1>
+                 <div id="inputdiv">
+                 <input id="peso" type="number" placeholder="Peso en Kg" >
                  </div>
-        </body>
+            <div id="errordiv"><p class="aviso" id="error">*Ingrese los datos</p></div>
+            <div id="boton"><button id="calcular" >CALCULAR</button></div>
+                     <div id="cajaresultado">
+                      <p class="resultado" id="voldia">Volumen Diario</p>
+                     <p class="resultado" id="man">mantenimiento</p>
+                     <p class="resultado" id="mman">medio mantenimiento</p>
+                     <p class="resultado" id="scx1500">Superficie corporal</p>
+                      <p class="resultado" id="scx2000">Superficie corporal</p>
+                     </div>
+                             <button id="ver">Como se calcula?</button>
+                             <button id="ocultar">Ocultar</button>
+                            <div id="info">
+                                <ul>
+                                    <li>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</li>
+                                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc</li>
+                                    <li>Finalmente, por cada kilo arriba de 20kg se suman 20cc.</li>
+                                </ul>
+
+                             </div>
+        </div>
+    </div>
+</body>
 </html>

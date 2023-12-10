@@ -1,59 +1,126 @@
-body {background-color:#ffe8cd;
-text-align: center;
-color: white;font-family: Arial, Helvetica, sans-serif;
-     }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-
-h1 {
-font-size: 40px; 
-color: white;
-display: block;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000020;
+    color: white;
 }
 
-@media screen and (max-width: 600px) {
-     h1 {font-size: 20px}
-     .calculadora, .info {padding-left: 80px;padding-right: 80px;}
-     
 
     
+
+
+#Calculadora {
+height: 450px;
+background-color:#000020 ;
+text-align: center;
+max-width: 80%;
+min-width: 400px;
+position: absolute ;
+inset: 0;
+margin: auto;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+border: 2px solid #171a4a;
+
 }
 
-input {width: auto;
-    background-color: #2c2842;
-height: 30px;
+#cajaresultado {
+    
+height: 92px;
+width: 100%;
+margin: 0 auto;
+position: relative;
+text-align: center;}
+
+h1 {
+    position: relative;
+    margin: 40px  0px  100px  0px ;
+}
+
+#inputdiv {
+    height: 50px;
+    width: 130px;
+    min-height: 50px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+input {width: 100%;
+    text-align: center;
+height: 100%;
+background-color: #171a4a;
+border: none;
+border-radius: 10px;
+inset: 0;
+margin: auto;
+position: relative;
 color: white;
+font-size: 20px;
+margin: 0 auto;
+min-width: 100%;
+}
+
+button {height: 100%;
+    width: 100%;
 text-align: center;
 border-radius: 10px;
-border: none;}
+border: none;
+background-color: #171a4a;
+color: white;
+font-size: 14px;
+margin: 0 auto;
+}
+
+#boton {width: 90px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+
+}
 
 ::placeholder {color: white;
 text-align: center;}
 
-button {width: 50pxpx;
+button:active {scale:  0.95;}
+
+.aviso { color: red;
+display: none;}
+
+#errordiv {width: 100%;
 height: 40px;
+position: relative;
+margin: 0 auto;}
+#error {position: relative;
+margin: 0 auto;}
+
+.resultado {display: none;
+font-size: 18px;}
+
+@media screen and (max-width: 600px){
+
+    #boton {width: 100px;
+    height: 60px;}
+  #inputdiv {width: 100%;
+height: 90px;}
+input {font-size: 50px;
+}  #ventana {width: 90%;}
+
+#Calculadora {height: 500px;}
+    
+ }
+
+ #ventana {
+    display: flex;
+    flex-direction: column;
+ }
+#ver {width: 150px;
+height: 30px;margin-bottom: 10px;}
+#info {font-size: 15px;
 text-align: center;
-border-radius: 10px;
-background-color: #2c2842;
-color: white;
-border:none;
-}
-
-
-.calculadora {
-    display: inline-block;
-    width: 50%;
-    height: 50%;
-    background-color: #ed6452;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 3px 3px 5px #2c2842;
-}
-
-.info {display: inline-block;
-background-color: #c94738;
-height: 50%;
-width: 50%;
-border-radius: 0px 0px 10px 10px;
-box-shadow: 3px 3px 5px #2c2842;}
-
-ul {display:inline-block;
-text-align: left;}
+display: none;}
+#ocultar {width: 150px;
+    height: 30px;
+display: none;}
